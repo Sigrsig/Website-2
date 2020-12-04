@@ -1,0 +1,143 @@
+
+html {
+  
+  width: 100%;
+}
+
+#root {
+  background-color: #ffffff;
+}
+
+#front-page {
+  padding-top: 4em;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  
+}
+
+
+h1 {
+  font-size: 5em !important;
+}
+
+h2 {
+  font-size: 1.5em !important;
+}
+
+/* Header */
+
+#header-bar {
+  position: fixed;
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+  background-color: rgba(29, 29, 54, 0.9);
+  width: 100%;
+  z-index: 999;
+}
+
+#header-bar>*:hover {
+  background-color: #64485C;
+}
+
+#header-bar > a {
+  color: #ADADAD;
+  padding: 1em;
+}
+
+/* Front Page (top) */
+#front-page {
+  height: 100vh;
+  background-color: #111124;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section, header {
+  position: relative;
+  overflow: hidden;
+background: #000;
+  height: 100%;
+}
+
+#fp-text {
+  padding-top: 10vh;
+}
+
+#down-arrow {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+
+/* Front page - lower */
+.fp-lower {
+  min-height: 800px;
+}
+
+#knows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.kn-item {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kn-item > p {
+  padding-top: 1em;
+}
+
+.kn-item > img {
+  width: 85%
+}
+
+#smoll {
+  width: 100%;
+  margin-top: -0.5em;
+}
+
+.prev-info {
+  padding: 1em;
+}
+
+.prev-info > p {
+  padding: 1em;
+}
+
+.preview-ex {
+  display: flex;
+  padding-bottom: 2em;
+}
+
+@media (max-width:1200px){
+  .preview-ex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prev-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+  }
+}
+
+
+
+/* Front Page animation */
+
+
+
+
+/* Functions */ 
