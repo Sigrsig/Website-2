@@ -1,6 +1,7 @@
 # Sigríður Ösp Website version 10/08/21
 
 The current version of my website. Created with React
+## [Visit Website](https://www.siggagreen.com)
 
 # Running the website
 ## Getting Started with Create React App
