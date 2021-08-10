@@ -1,5 +1,9 @@
-# Getting Started with Create React App
+# Sigríður Ösp Website version 10/08/21
 
+The current version of my website. Created with React
+
+# Running the website
+## Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
