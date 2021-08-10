@@ -1,41 +1,30 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import FPLower from './fpLower';
-import WorkExamples from './workExamples';
-import BgAnimation from './bgAnimation.js';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { NavLink } from 'react-router-dom';
+import myweblap from './img/codeEx/myweblap.png'
 
-
-
+import Header from './Pages/header';
+import Footer from './Pages/footer';
 
 function App() {
-  
-
   return (
-    
-    <div id="home-page">
-        <div id="front-page">
-            <div id="fp-text">
-              <h1>Sigga Ösp</h1>
-              <h2 className="min-text">Front End Developer</h2>
-              <h2 className="min-text">Based in Berlin, Germany</h2>
-            </div>
-            
-            <BgAnimation />
-            <div id="down-arrow"></div>
-            
-        </div>
-            
-        
-    	      <FPLower />            
-            <WorkExamples />
+    <div className="App">
+      <div className="full-page">
+      <Header />
+        <div className="row intro">
+          
+          <div className="info-des col-sm-5">
+          
+            <h1>Hi! I'm <mark className="font-emph">Sigga</mark>. An Icelandic web developer based in Berlin</h1>
+            <NavLink className="non-nav-butt" to="/Portfolio"><button className="button" >My Projects</button></NavLink>
+          </div>
+          <img src={myweblap} id="laptop-pics" alt="A laptop" ></img>
+
+        </div>  
+        </div>   
+        <Footer /> 
     </div>
-      
-   
-    
   );
 }
-
-
 
 export default App;

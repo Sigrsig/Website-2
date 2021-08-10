@@ -1,0 +1,89 @@
+$primary-color: #8a639b;
+$header-color: #745285;
+$header-text: #baa9c3;
+$header-buttons: #a086ab;
+$button-highlight: #91759e;
+
+.trello-app{
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-color;
+    margin: 0px;
+    height: 100vh;
+}
+
+.trello-h4 {
+    margin: 10px;
+}
+#title {
+    margin: 5px;
+}
+
+
+#trello-header {
+    background-color: $header-color;
+    color: $header-text;
+    margin: 0px 0px 3em 0px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#trello-title {
+    position: fixed; /* or absolute */
+  left: 50%;
+}
+
+.trello-button, .trello-bigbutton {
+    background-color: $header-buttons;
+    color: white;
+    border: 0px;    
+    border-radius: 3px; 
+    padding: 5px;
+}
+
+.trello-button {
+    margin-right: 5px;
+}
+
+.trello-last {margin: 0px;}
+
+.trello-button:hover, .trello-bigbutton:hover {
+    background-color: $button-highlight;
+}
+
+.trello-bigbutton, .trello-button {
+    display: flex;
+    align-items: center;
+}
+
+#top-in {
+    background-color: $header-buttons;
+    height: 100%;
+    margin-left: 5px;
+    display: flex;
+    border-radius: 3px;
+}
+
+#top-in > input {
+    background-color: transparent;
+    border: none;
+    
+}
+
+.trello-p {
+    margin: 7px;
+}
+
+#left-side, #right-side {
+    display: flex;
+}
+
+#dragboi {
+    margin: 5px;
+}
+
+.MuiCardContent-root {
+    padding: 10px !important;
+}
+

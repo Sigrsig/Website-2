@@ -1,0 +1,85 @@
+.trello-app {
+  font-family: "Roboto", sans-serif;
+  background-color: #8a639b;
+  margin: 0px;
+  height: 100vh;
+}
+
+.trello-h4 {
+  margin: 10px;
+}
+
+#title {
+  margin: 5px;
+}
+
+#trello-header {
+  background-color: #745285;
+  color: #baa9c3;
+  margin: 0px 0px 3em 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#trello-title {
+  position: fixed;
+  /* or absolute */
+  left: 50%;
+}
+
+.trello-button, .trello-bigbutton {
+  background-color: #a086ab;
+  color: white;
+  border: 0px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.trello-button {
+  margin-right: 5px;
+}
+
+.trello-last {
+  margin: 0px;
+}
+
+.trello-button:hover, .trello-bigbutton:hover {
+  background-color: #91759e;
+}
+
+.trello-bigbutton, .trello-button {
+  display: flex;
+  align-items: center;
+}
+
+#top-in {
+  background-color: #a086ab;
+  height: 100%;
+  margin-left: 5px;
+  display: flex;
+  border-radius: 3px;
+}
+
+#top-in > input {
+  background-color: transparent;
+  border: none;
+}
+
+.trello-p {
+  margin: 7px;
+}
+
+#left-side, #right-side {
+  display: flex;
+}
+
+#dragboi {
+  margin: 5px;
+}
+
+.MuiCardContent-root {
+  padding: 10px !important;
+}
+
+/*# sourceMappingURL=styles.css.map */

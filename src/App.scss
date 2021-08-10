@@ -1,0 +1,504 @@
+$duration: .2s;
+$distance: 8px;
+$easeOutBack: cubic-bezier(0.175, 0.885, 0.320, 1.275);
+
+$primary-color: #772e25;
+$primary-color-light: #c44536;
+$background-color: #fafafa;
+$secondary-color: #283d3b;
+$secondary-color-light: #197278;
+$font-color: #000000;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+html {
+    
+    min-height: 100vh;
+    margin: auto;
+    color: $font-color;  
+}
+
+.full-page {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+}
+
+html, .page-main {
+  font-family: 'Raleway', sans-serif;
+  background-color: $background-color;
+}
+
+#main {
+  min-height: 100vh;
+  
+}
+
+ //header
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+}
+
+.nav > .nav-butt {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    padding: 5px;
+    margin: 0px 20px 0px 0px;
+}
+
+#logo {
+  padding: 1rem 0rem 0rem 1rem;
+  text-decoration: underline;
+  color: $primary-color-light;
+}
+
+#logo:hover {
+  cursor: pointer;
+}
+
+#logo-img {
+  max-width: 25px;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+li{
+  height: 100%;
+}
+
+// Main Page
+.intro {
+  margin: 0px !important; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+}
+
+.info-des {
+  margin: 20px;
+}
+
+mark {
+    color: $primary-color-light;
+    background-color: $background-color !important; 
+    text-decoration: underline;
+}
+
+.button {
+    border-radius: 12px;
+    width: 120px;
+    padding: 5px;
+    background-color: $background-color;
+    color: $secondary-color-light;
+    border: 2px solid $secondary-color-light;
+    transition-duration: 0.3s;
+}
+
+.button:hover {
+    background-color: $secondary-color-light;
+        color: $background-color;
+        border: 2px solid $background-color;
+}
+
+.non-nav-butt{
+  text-decoration: none;
+  color: $secondary-color-light;
+ }
+
+ .non-nav-butt:hover {
+  color: $background-color;
+ }
+
+.info-pic {
+    background-color: $secondary-color-light;
+}
+
+
+//Portfolio
+.portfpg{
+  padding-top: 3rem;
+}
+
+.project {
+  padding: 2em;
+}
+
+.ex-link:link{
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.ex-link:visited{
+  color:$primary-color;
+}
+
+.ex-link:hover{
+  color: $primary-color-light;
+}
+
+
+// About Page
+.about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+}
+
+#abt-me-text {
+  padding: 2rem;
+  max-width: 550px;
+}
+
+#me-pic-cont {
+  max-width: 300px;
+}
+
+#mephoto {
+  width: 300px;
+  height: 300px;
+	border-radius: 50%;
+}
+
+.laptop-pic, #laptop-pics {
+  width: 400px;
+  
+}
+
+.my-name {
+  display: flex;
+  justify-content: center;
+}
+
+// Contact Page
+.contactpg, .aboutpg {
+  padding-top: 10vh;
+  padding-left: 5vw;
+}
+
+#my-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-icon {
+  margin: 5px;
+  color: $font-color;
+}
+
+.cont-icon:hover, link:hover {
+  color: $secondary-color-light;
+}
+
+#my-email{
+  color:$font-color;
+}
+
+#my-email:hover {
+  color: $primary-color-light;
+}
+
+
+//Form
+#contact-form {
+  padding: 3rem 1rem 4rem 1rem;
+  margin-top: 3rem;
+  max-width: 30rem;
+  min-width: 20rem;
+  width: 30vw;
+  background-color: #f3f3f3;
+}
+
+input, textarea {
+  width: 100%;
+}
+ .form-button {
+   margin-left: 0.5rem;
+ }
+
+.form-segment {
+  padding: 0.5em;
+}
+
+.form-button {
+  border-radius: 12px;
+  width: 120px;
+  padding: 5px;
+  background-color: $secondary-color-light;
+  color: $background-color;
+  border: 2px solid $background-color;
+
+}
+
+//footer
+footer {
+    color: $background-color;
+    text-transform: uppercase;
+    background-color: $secondary-color-light;
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.foot-icon {
+  color:$background-color;
+  margin: 0.5rem;
+}
+
+.foot-nav {
+  color: $background-color;
+  display: flex;
+  align-items: center;
+  height: 5em;
+  padding: 5px;
+  margin: 0px 20px 0px 0px;
+  text-decoration: none;
+}
+.foot-nav:hover {
+  color: $background-color;
+}
+
+
+// Button Animations
+.nav-butt {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+  
+     &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 2px;
+      left: 0; right: 0;
+      height: 2px;
+      background-color: $secondary-color-light;
+    }
+    &:before {
+      opacity: 0;
+      transform: translateY(- $distance);
+      transition: transform 0s $easeOutBack, opacity 0s;
+    }
+    &:after {
+      opacity: 0;
+      transform: translateY($distance/2);
+      transition: transform $duration $easeOutBack, opacity $duration;
+    }
+    &:hover,
+    &:focus {
+      &:before,
+      &:after {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      &:before {
+        transition: transform $duration $easeOutBack, opacity $duration;
+      }
+      &:after {
+        transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
+      }
+    }
+  }
+
+  .nav-butt:hover {
+    cursor: pointer;
+  }
+
+  .nav-butt:link, .nav-butt:visited, .nav-butt:hover, .nav-butt:active {
+    text-decoration: none;
+    color: $secondary-color;
+  }
+
+
+//Dropdown Menu Functionality
+
+
+#burger-time{
+  display: none;
+  width: 50px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+} 
+
+#secret-menu{
+  display: none;
+}
+
+#dropdown-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+#secret-menu {
+  background-color: #f3f3f3;
+  width: 15rem;
+  margin-left: 0.5rem;
+  box-shadow: 0 0 5px;
+  display: none;
+}
+
+.sec-butt {
+  border-bottom: 1px solid #b4b3b3;
+  margin-right: 0 !important;
+}
+.sec-butt:last-child{
+  border: 0;
+}
+.sec-butt:hover{
+  background-color: $secondary-color-light;
+  color: $background-color;
+}
+
+
+@media (max-width: 550px) {
+  #header-bar {display: none;}
+  #burger-time {display: initial;}
+  #footer-bar {display:none;}
+} 
+@media (min-width: 550px) {
+  #secret-menu{display: none !important;}
+}
+
+
+// Kojima App Styles
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+:root {
+    --koj-background-color: rgba(19,24,28,255);
+    --koj-font-color: rgba(173,222,224,255);
+    --koj-bar-left : rgba(5,82,152,255);
+    --koj-bar-right: rgba(11,56,95,255);
+    --koj-next-button-color: rgba(241,17,64,255);
+
+}
+
+
+#kojima-app {
+  background-color: var(--koj-background-color);
+  color: var(--koj-font-color);
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+#koj-main-area {
+  max-width: 80vw;
+  margin: auto;
+}
+
+.koj-boxing {
+    background: linear-gradient(90deg, var(--koj-bar-left) 0%, var(--koj-bar-right) 100%);
+	border: solid rgba(12,139,187,255)
+    2px;
+	padding: 0.5em;
+}
+
+
+.koj-description{
+    font-size: 1.5em;
+}
+
+.koj-list>li, .koj-list>li {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.koj-list>li>input, .koj-list>li>input, .koj-list>li>textarea {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 60vw;
+    background-color: var(--koj-background-color);
+    border: 1px solid var(--koj-font-color);
+    padding: 0.5em;
+    color: var(--koj-font-color);
+}
+
+.koj-list>li>label {
+    padding-bottom: 0.25em;
+}
+
+
+.koj-page-section {
+    min-height: 80vh;
+}
+
+.roll-butt {
+	background-color: var(--koj-font-color);
+  color: var(--koj-background-color);
+	border: none;
+	padding: 0.5em;
+  margin-bottom: 1em;
+  min-width: 5em;
+  font-weight: bold;
+}
+
+.roll-butt:disabled {
+  color: var(--koj-background-color);
+  background-color: var(--koj-background-color);
+  border: solid 1px var(--koj-font-color);
+}
+
+//Pages
+.koj-page-section {
+    display:none;
+}
+
+#koj-intro-page{
+    display: block;
+}
+
+// Next/prev buttons
+#button-area {
+    display: flex;
+    padding-bottom: 2em;
+}
+
+.koj-button-icon {
+    background-color: var(--koj-font-color);
+    color: var(--koj-background-color);
+    font-size: 2.6em;
+    padding: 5px;
+}
+
+
+
+.next-button {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    width: 25vw;
+    border: 1px solid var(--koj-font-color);
+    color: var(--koj-font-color);
+
+    background: linear-gradient(to right, var(--koj-next-button-color) 50%, var(--koj-background-color) 50%);
+    background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+}
+
+.next-button:hover {
+    background-position: left bottom;
+  }
+
